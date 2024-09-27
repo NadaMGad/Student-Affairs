@@ -1,0 +1,78 @@
+h2 {
+    background-color:white;
+    padding: 0%;
+    text-align: left;
+}
+
+table {
+    border: 2px solid black;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2%;
+    border-collapse: collapse;
+}
+
+.submit {
+    font-size: 200%;
+    width: 8%;
+    margin-top: 8%;
+    background-color: rgb(184, 194, 194);
+}
+
+td, th {
+    border: 2px solid black;
+    font-size: 100%;
+    width: 2%;
+    background-color: rgb(236, 196, 238);
+}
+
+input {
+    display: block;
+}
+
+select {
+    font-size: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgb(254, 254, 254);
+}
+
+body {
+    background-color: rgba(226, 137, 211, 0.096);
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+    font-size: 77%;
+    width: 15%;
+    font: bold;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: darkorchid;
+}
+
+li:last-child {
+    border-right: none;
+}

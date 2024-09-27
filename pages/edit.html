@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/StyleCSS.css">
+    <title>Edit Page</title>
+</head>
+<script src="../javaScrict/js.js">
+</script>
+<body>
+    <div class="div1">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="add.html">Add Student</a></li>
+            <li><a href="search.html">Update Student</a></li>
+            <li><a class="active" href="edit page.html">Edit Student Data Page</a></li>
+            <li><a href="searchbyname.html">Search For an Active Student</a></li>
+            <li><a href="departement page.html">Assign Department</a></li>
+            <li><a href="student  status.html">View all active/Inactive Students</a></li>
+        </ul>
+        <div id="form-add">
+            <form action="" onsubmit="return check();" method="post">
+
+                <h1>Edit Student Information</h1>
+                <hr>
+                <div class="div-label">
+                    <label for="_id">ID :</label>
+                    <input type="number" name="ID" id="id" value="121324"><br>
+                </div>
+
+                <div class="div-label"><label for="_name">Name :</label>
+                    <input type="text" name="Name" id="name" value="Mohamed Ali"><br>
+                </div>
+
+                <div class="div-label"><label for="_date">Date Of Birth :</label>
+                    <input type="date" name="Date" id="date" value="2020-01-01"><br>
+                </div>
+
+                <div class="div-label"> <label for="_gpa">GPA :</label>
+                    <input type="number" step="0.01" name="GPA" id="gpa" value="2.0"><br>
+                </div>
+
+                <div class="div-label"> <label for="_gender">Gender :</label>
+                    <select name="Gender" id="gender">
+                        <option>Male</option>
+                        <option>Famale</option>
+                    </select><br>
+                </div>
+
+                <div class="div-label"> <label for="_level">Level :</label>
+                    <input type="text" name="Level" id="level" value="1"><br>
+                </div>
+
+                <div class="div-label"> <label for="_status">Status :</label>
+                    <select name="Status" id="status">
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select><br>
+                </div>
+
+                <div class="div-label"> <label for="_department">Department :</label>
+                    <input type="text" name="Department" id="department" value="IS"><br>
+                </div>
+
+                <div class="div-label"> <label for="_e-mail">E-mail :</label>
+                    <input type="email" name="E-mail" id="email" value="Mohamed.@com"><br>
+                </div>
+
+                <div class="div-label"><label for="_mobile_number">Mobile Number :</label>
+                    <input type="text" name="Mobile Phone" id="phonenumber" value="01125562235" maxlength="11"><br>
+                </div>
+
+                <input type="submit" name="Update" value="Update">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

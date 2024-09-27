@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body> 
+
+        <div class="navbar">
+            <h2>Student Affairs</h2>
+
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="add.html">Add </a></li>
+                <li><a href="search.html">Update </a></li>
+                <li><a href="edit page.html">Edit Page</a></li>
+                <li><a href="searchbyname.html">Search For an Active Student</a></li>
+                <li><a href="departement page.html">Assign Department</a></li>
+                <li><a href="student  status.html">View all active/Inactive Students</a></li>
+            </ul>
+        </div>
+
+        <form>
+           <fieldset>
+            <legend>Department</legend>
+
+            <div class="item">
+                <label for="" id="l1">Department</label>
+                <input list="DEPARTMENTS" name="depart" id="txt" required> 
+                <datalist id="DEPARTMENTS">
+                    <option value="CS" data-id="1" >
+                    <option value="AI" data-id="2" >
+                    <option value="IS" data-id="3" >
+                    <option value="IT" data-id="4" >
+                    <option value="DS" data-id="5" >
+                </datalist>
+            <!-- <label for="StuDEPARTMENT">Department <span></span></label>
+            <input type="text" style="margin-left: 12px;" placeholder="Ex Computer Science" name="student Department" id="StuDEPARTMENT" required> -->
+            </div>
+            <br>
+            <div class="item">
+            <label for="StuID">ID<span style="margin-left:75px;"></span></label>
+            <input type="number" placeholder="Ex 203203032" name="student id" id="StuID" required autofocus> 
+            </div>
+            <br>
+
+            <div class="item">
+            <label for="StuName">Name <span style="margin-left: 45px;"></span></label>
+            <input type="text" placeholder="Ex Ahmed Hassan" name="student name" id="StuName" required>
+            </div>
+            <br>
+
+            <div class="item">
+            <label for="StuYear">year <span style="margin-left: 60px;"></span></label>
+            <input type="text" placeholder="Ex Third/forth" name="student year" id="StuYear" required pattern="(third|forth)" title="You Will not be Spacialization This Your !!!">
+            </div>
+            <br>
+            
+            <br><br>
+
+            <button class="submit" type="button"> Back </button>
+
+            <div class="btns">
+            <!-- <button type="button" class="btns">Cancel <i class="fa-solid fa-xmark"></i></button>
+            <button type="button" class="btns">Delete Student <i class="fa-solid fa-user-xmark"></i></button> -->
+            <button class="sub">Submit </button> 
+            </div>
+
+           </fieldset>
+        </form>
+    </body>
+</html>

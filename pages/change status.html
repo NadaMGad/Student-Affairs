@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Status</title>
+    <meta name="discrebtion" content="this page is student affair system" />
+    <link rel="stylesheet" href="../css/stylechange.css" />
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        div {
+            background-color: rgb(236, 219, 196);
+            padding: 2%;
+        }
+
+        table {
+            border: 2px solid black;
+            font-size: x-large;
+        }
+
+        .submit {
+            font-size: 150%;
+            width: 10%;
+            margin-top: 5%;
+            background-color: cadetblue;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            font-size: 140%;
+            width: 2%;
+            background-color: rgb(236, 196, 238);
+        }
+
+        table {
+            margin-top: 2%;
+        }
+
+        input {
+            display: block;
+        }
+
+        select {
+            font-size: 90%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 8%;
+            margin-right: 8%;
+            background-color: rgb(254, 254, 254);
+        }
+
+        body {
+            background-color: rgba(226, 137, 211, 0.096);
+        }
+
+        .button {
+            background-color: red;
+            width: 4%;
+            height: 4%;
+            font: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+            font-size: 77%;
+            width: 13%;
+            font: bold;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        li a.active {
+            background-color: darkorchid;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="add.html">Add Student</a></li>
+        <li><a href="search.html">Update Student</a></li>
+        <li><a href="edit page.html">Edit Student Data Page</a></li>
+        <li><a href="searchbyname.html">Search For an Active Student</a></li>
+        <li><a href="departement page.html">Assign Department</a></li>
+        <li><a href="student  status.html">View all active/Inactive Students</a></li>
+    </ul>
+    <div>
+        <h1>Change Activity Status</h1>
+    </div>
+    <form>
+        <center>
+            <table style="text-align: center;">
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><select name="status">
+                            <option>Active</option>
+                            <option>Inactive</option>
+                        </select></td>
+                </tr>
+            </table>
+            <input type="submit" class="submit" value="Save">
+        </center>
+    </form>
+</body>
+
+</html>

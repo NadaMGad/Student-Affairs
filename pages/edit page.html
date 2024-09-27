@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/StyleCSS.css">
+
+    <title>Edit Page</title>
+</head>
+<script >
+    function deleteRow(row){
+    var d = row.parentNode.parentNode.rowIndex;
+    document.getElementById('dsTable').deleteRow(d);
+ }
+</script>
+
+<body>
+    <div class="div2">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="add.html">Add Student</a></li>
+            <li><a href="search.html">Update Student</a></li>
+            <li><a class="active" href="edit page.html">Edit Student Data Page</a></li>
+            <li><a href="searchbyname.html">Search For an Active Student</a></li>
+            <li><a href="departement page.html">Assign Department</a></li>
+            <li><a href="student  status.html">View all active/Inactive Students</a></li>
+        </ul>
+    </div>
+    <div class="div3">
+        <form action="" method="post">
+            <center>
+                <h1>Search by Name</h1><input type="text" name="search" class="search" placeholder=" Name..."
+                    required><input type="submit" class="button" name="button" value="Search">
+            </center>
+        </form>
+        <table id="dsTable">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Level</th>
+                <th>Status</th>
+                <th>Department</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+            <tr>
+                <td id="td1">121324</td>
+                <td id="td2">Mohamed Ali</td>
+                <td id="td3">2</td>
+                <td id="td4">Active</td>
+                <td id="td5">IS</td>
+                <td><a href="edit.html"> <input class="link1" type="button" id="edit" value="Edit"></a></td>
+                <td> <input type="button" id="deleteDep" class="link1" value="Delete" onclick="deleteRow(this)">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
